@@ -1,0 +1,17 @@
+{
+  "name": "bun-random-chat-room",
+  "module": "index.ts",
+  "scripts": {
+    "dev": "bun --watch run index.ts",
+    "build": "bun build --compile --minify-whitespace --minify-syntax --target bun --outfile server ./index.ts",
+    "run-prod": "./server"
+  },
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
