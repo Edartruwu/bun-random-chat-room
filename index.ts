@@ -154,7 +154,7 @@ function sendSystemMessage(
 
 // Create and start the server
 const server: Server = Bun.serve({
-  port: 3000,
+  port: 8787,
   fetch(req, server) {
     // Only handle WebSocket upgrade requests
     if (server.upgrade(req)) {
